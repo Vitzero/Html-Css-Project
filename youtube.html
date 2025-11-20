@@ -6,7 +6,20 @@
 
     <title>Youtube.com Clone</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--to-continuous->https://www.youtube.com/watch?v=G3e-cpL7ofc -->
     <style>
+      p{
+        font-family: "roboto";
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
       .search-bar {
         font-size: 20px;
         margin-left: 12px;
@@ -17,9 +30,6 @@
         width: 300px;
         border-radius: 4px;
         display: block;
-      }
-
-      .video-title {
       }
 
       .video-author,
@@ -33,29 +43,100 @@
         margin-right: 16px;
       }
 
+      .video-title{
+        margin-top: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+
+      .channel-picture{
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+
+      .video-info{
+        display:inline-block;
+        width: 240px;
+      }
+
+      .profile-picture{
+        width: 40px;
+        border-radius: 50px;
+        margin-top: 12px;
+      }
+
+      .thumbnail-row{
+        margin-bottom: 12px;
+      }
+
+      .video-stats,
+      .video-author{
+        font-size: 14px;
+        color: rgb(96, 96, 96)
+      }
+
+      .video-author{
+        margin-bottom: 4px;
+      }
+
+      header{
+        padding: 12px;
+        align-items: center;
+      }
+
+
     </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+
+    <header>
+      <input class="search-bar" type="text" placeholder="Search" />
+    </header>
+    
 
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/testando.avif" />
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/testando.avif" />
+      </div>
 
-      <p class="video-title">Talkink Tech and AI with Augusto Galego</p>
+      <div>
+        <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channels4_profile.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Talkink Tech and AI with Augusto Galego</p>
 
-      <p class="video-author">Vitor Hollow</p>
+          <p class="video-author">Galego Augusto</p>
 
-      <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        </div>
+      </div>
+      </div>
     </div>
-
+    
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/hq720.avif" />
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq720.avif" />
+      </div>
 
-      <p class="video-title">Talkink Tech and AI with Lucas Riding</p>
+      <div>
+        <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channels4_profile2.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Talkink about AI with Lucas montano</p>
 
-      <p class="video-author">Vitor Hollow</p>
+          <p class="video-author">Lucas Montano</p>
 
-      <p class="video-stats">5.4M views &#183; 8 months ago</p>
+          <p class="video-stats">12.4M views &#183; 6 months ago</p>
+        </div>
+      </div>
+      </div>
     </div>
-  </body>
+
+    
+
 </html>
